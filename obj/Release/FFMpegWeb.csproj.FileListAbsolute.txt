@@ -1,0 +1,7 @@
+C:\Documents and Settings\admin1\My Documents\GitHub\FFMpegConvertor\FFMpegWeb\bin\FFMpegWeb.dll
+C:\Documents and Settings\admin1\My Documents\GitHub\FFMpegConvertor\FFMpegWeb\bin\FFMpegWeb.pdb
+C:\Documents and Settings\admin1\My Documents\GitHub\FFMpegConvertor\FFMpegWeb\bin\EntityFramework.dll
+C:\Documents and Settings\admin1\My Documents\GitHub\FFMpegConvertor\FFMpegWeb\bin\EntityFramework.xml
+C:\Documents and Settings\admin1\My Documents\GitHub\FFMpegConvertor\FFMpegWeb\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\admin1\My Documents\GitHub\FFMpegConvertor\FFMpegWeb\obj\Release\FFMpegWeb.dll
+C:\Documents and Settings\admin1\My Documents\GitHub\FFMpegConvertor\FFMpegWeb\obj\Release\FFMpegWeb.pdb

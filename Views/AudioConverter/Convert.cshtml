@@ -1,0 +1,35 @@
+﻿@{
+    
+}
+<h2>
+    Welcome to free online AudioConverter</h2>
+<!--<div>
+    @using (Html.BeginForm("Convert", "AudioConverter", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        <input type="file" name="file" />
+        <input type="submit" value="OK" />
+    }</div>-->
+<div id="progress" style="display: none;" class="progress">
+    <img src="/content/images/progress.gif" alt="progress" /></div>
+<div>
+    @using (Html.BeginForm("ConvertToMP3", "AudioConverter", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    { 
+        <input type="file" id="ToMP3" name="ToMP3" style="position: absolute; left: -9999px;
+            width: 0px; height: 0px;" title="Select a file to convert to MP3" onchange="if (!CheckSupportedFormatsToMP3(this)) { ShowProgress('progress'); document.getElementById('SubmitToMP3').click(); }" />
+        <input type="submit" id="SubmitToMP3" style="position: absolute; left: -9999px; width: 0px;
+            height: 0px;" value="Submit to MP3" />
+        <input type="image" onclick="document.getElementById('ToMP3').click(); return false;"
+            src="/content/images/tomp3.png" title="Convert audio to MP3" />
+    }
+</div>
+<div>
+    @using (Html.BeginForm("ConvertToWMA", "AudioConverter", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    { 
+        <input type="file" id="ToWMA" name="ToWMA" style="position: absolute; left: -9999px;
+            width: 0px; height: 0px;" title="Select a file to convert to WMA" onchange="if (!CheckSupportedFormatsToWMA(this)) document.getElementById('SubmitToWMA').click();" />
+        <input type="submit" id="SubmitToWMA" style="position: absolute; left: -9999px; width: 0px;
+            height: 0px;" />
+        <input type="image" onclick="document.getElementById('ToWMA').click(); return false;"
+            src="/content/images/towma.png" title="Convert audio to WMA" />
+    }
+</div>
